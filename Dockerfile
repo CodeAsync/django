@@ -31,4 +31,5 @@ RUN pip install -r requirements.txt
 VOLUME /bitnami/python /app
 
 EXPOSE 8000
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+# To run Django: CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+CMD ["python3"]
